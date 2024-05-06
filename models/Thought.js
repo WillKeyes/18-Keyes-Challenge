@@ -34,7 +34,7 @@ const ThoughtSchema = new mongoose.Schema({
     default: Date.now,
     get: (createdAtVal) => createdAtVal.toDateString()
   },
-  username: {  // reference to the user who created the thought
+  username: { 
     type: String,
     required: true
   },
